@@ -10,7 +10,7 @@ This repository contains all the scripts  used to do this project, aimed to calc
 
 Go to the folder `RNA_fold` and install the required packages with the correct versions
 ```markdown
-$ cd RNA_fold 
+$ cd RNA_fold/
 ```
 ```markdown
 $ cd pip install -r requirements.txt
