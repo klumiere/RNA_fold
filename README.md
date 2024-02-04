@@ -31,4 +31,10 @@ Run the script `training_script.py`
 $ ./training_script.py ./TRAIN/train_pdb_list.txt ./TRAIN/training_pdb_files/ ./PLOT/ trainset_dist
 ```
 
+## 2/ Plot
+
+Run the script `plot_script.py` 
+```markdown
+$ ./plot_script.py ./PLOT/
+```
 
