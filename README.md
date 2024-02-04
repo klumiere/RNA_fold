@@ -56,7 +56,7 @@ $ ./scoring_script.py ./SCORING/list_test_pdb.txt ./SCORING/ ./SCORING/2O3Y.txt 
 - It will sum all the score for this pdb file to obtain an estimation of Gibbs free energy. <br>
   _Note: I didn't make the interpolation for the estimation of Gibbs free energy ..._
   
-## Path used in the command lines
+## Path used in command lines
 
 - `./TRAIN/train_pdb_list.txt` : path to the file train_pdb_list.txt which contains the list of PDB file identifiers used for the training set
 - `./TRAIN/training_pdb_files/`: path to the directory that will contain all the downloaded PDB files for the training set
