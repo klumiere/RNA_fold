@@ -156,9 +156,9 @@ def calculation_GFE_estimation (input_file_score_pdb):
             score=float(line.strip())
             
             gibbs_estimation+=score
-            
+        print("########################################################################")     
         print(f'The estimated Gibbs free energy for the pdb file is {gibbs_estimation}.') #print the result
-    
+        print("########################################################################")  
 
 ###        
 #1/ Download the pdb file form a list that have on pdb id            
