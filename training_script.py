@@ -336,4 +336,4 @@ if (len(sys.argv)<=5):
 
 #print("LEN sys argv:",len(sys.argv))
 
-###end of the script train_script.py###
+###end of the script training_script.py###
