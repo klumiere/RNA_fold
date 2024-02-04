@@ -18,13 +18,17 @@ Clone the project
 $ git clone https://github.com/klumiere/RNA_fold.git
 ```
 
-Then, go to the folder `RNA_fold`
+Then, go to the folder `RNA_fold` and run this following command:
+```markdown
+$ chmod a+x training_script.py plot_script.py scoring_script.py
+```
+ 
 
 ## 1/ Training
 
 Run the script `training_script.py`
 ```markdown
-$ 
+$ ./training_script.py  /home/lumiere/RNA_fold/TRAIN/train_pdb_list.txt /home/lumiere/RNA_fold/TRAIN/training_pdb_files/ /home/lumiere/RNA_fold/PLOT/ trainset_dist
 ```
 
 
