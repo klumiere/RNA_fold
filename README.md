@@ -13,7 +13,7 @@ Go to the folder `RNA_fold` and install the required packages with the correct v
 $ cd RNA_fold/
 ```
 ```markdown
-$ cd pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 Clone the project 
 ```markdown
