@@ -2,7 +2,7 @@
 
 _by Kamély LUMIÈRE_
 
-This repository contains all the scripts  used to do this project, aimed to calculate the estimated Gibbs free energy the a RNA conformation from one pdb file. 
+This repository contains all the scripts  used to do this project, aimed to calculate the estimated Gibbs free energy of the RNA conformation of one pdb file. 
 
 
 ## Install
