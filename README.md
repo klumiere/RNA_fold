@@ -26,10 +26,14 @@ $ chmod a+x training_script.py plot_script.py scoring_script.py
 
 ## 1/ Training
 
-Run the script `training_script.py` 
+Run the script `training_script.py`.
+
+
 ```markdown
 $ ./training_script.py ./TRAIN/train_pdb_list.txt ./TRAIN/training_pdb_files/ ./PLOT/ trainset_dist
 ```
+-This will allow you to download PDB files for the trainset from the [RCSB PDB](https://www.rcsb.org) database from a list containing PDB identifiers.
+- At the end, it will generate 20 files for 20 pairs of bases in which each line corresponds to an interval of interactomic distance in the folder `PLOT`
 
 ## 2/ Plot
 
