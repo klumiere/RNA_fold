@@ -324,8 +324,9 @@ download_list_pdb(sys.argv[1],sys.argv[2])
 interatomic_distance(sys.argv[2])
 ##interatomic_distance("/home/lumiere/RNA_fold/TRAIN/training_pdb_files/")
 
-#3/ Concatenate all the file dist.txt to have all the IAD in the same file and store it in the same folder to use it after..
+## condition in order to do not have problem to run the next script scoring_script.py that use the two previous function in it script. Here we have 4 arguments to run training_script.py (len(sys.argv=5) and for scoring we will have 5 (len(sys.argv=6)
 if (len(sys.argv)<=5):
+    #3/ Concatenate all the file dist.txt to have all the IAD in the same file and store it in the same folder to use it after..
     concatene_trainset(sys.argv[2], sys.argv[4])
 #concatene_trainset("/home/lumiere/RNA_fold/TRAIN/training_pdb_files")
 
