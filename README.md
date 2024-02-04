@@ -52,6 +52,7 @@ $ ./scoring_script.py ./SCORING/list_test_pdb.txt ./SCORING/ ./SCORING/2O3Y.txt 
 ```
 - This script will allow you to calculate the interatomic distance then the score for of each pair of bases  for one new pdb file based on the calulated score obtained in the trainset.
 - It will sum all the score for this pdb file to obtain an estimation of Gibbs free energy.
+  _Note: I didn't make the interpolation for the estimation of Gibbs free energy ..._
   
 
 
