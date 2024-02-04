@@ -8,7 +8,7 @@
 #################################
 
 
-###train_script.py###
+###training_script.py###
 
 
 #librairies
@@ -199,11 +199,11 @@ def frequencies_and_scores(trainset_dist_path, score_output_path):
             else:
                 DT=DT #do nothing
             tot_iad+=1    
-            #print(ligne)   
+          
             nij[DT]+=1 #for each line in the file with all de IAD, we increases the corresponding Nij
             
             ## different interval of distance from 1 to 20, for 0 cf last else
-            if(D>=1 and D<2):
+            if(D>=1 and D<2): #2nd line of the output file with the 20 score: 1rst line interval of IAD such as IAD<1 
                 nij_r[f'{DT}_1']+=1 #the counter withe the dint and the given dist is incremented to 1= 2nd line
                     
             elif(D>=2 and D<3):#3rd line
@@ -263,16 +263,10 @@ def frequencies_and_scores(trainset_dist_path, score_output_path):
             else:
             
                 nij_r[f'{DT}_0']=nij_r[f'{DT}_0'] #lines that have a dist to 0 Angström or dont' have a dist in the above intervals wil be set to 0 but then il all the cases the score will be 0 for these cases = 1rst line of the score file
-                   
-                
-    #test if the dico works        
-    ##print(nij)
-    ##print(nij_r)               
-            
+    
    
     ###to compute the reference frequencies: dint are indistinct###  
-        
-        
+   
         nxx_r={} #dico that contains all the nxx_1, nxx_2, nx_21
         for d in dist:
             cpt_name=f'nxx_{d}'  
@@ -283,25 +277,14 @@ def frequencies_and_scores(trainset_dist_path, score_output_path):
             for d in dist:
                 if key.endswith(f'_{d}'):
                     nxx_r[f'nxx_{d}']+=value
-                   
-        #print(nij_r)            
-        #print(nxx_r)
-        
+     
         nxx=tot_iad # the nb of the total interatomic dist in the concatenated file= nxx
-        
-        #print("NXX=",nxx) 
-        #print(nxx_r.keys())
+    
         #store the 20 score ina file for each dint
-
         for dnt in di_nt:
-        
-        
-        #pdb_file_output_dist=f"{folder_pdb}/{pdb_file[:-4]}_dist.txt"
         
             score_output=f"{score_output_path}{dnt}.txt" # 10 output (10 dint) with the the 20 scores
             
-            #score_output=f"{trainset_dist_path}/{dnt}.txt" # 10 output (10 dint) with the the 20 scores
-        
             with open(score_output,"w") as fichierecriture:
             
             
@@ -325,14 +308,12 @@ def frequencies_and_scores(trainset_dist_path, score_output_path):
                 
                 
                 for key, value in scores.items():
-                    #fichierecriture.write(f"{key}: {value}\n")
                     fichierecriture.write(f"{value}\n")
                 
     print(f"All the scores were stored in a unique file in the folder {score_output[:-6]} in .txt file \n")
     
 ###    
-    
-    
+      
 #1/ Download the pdb file from the train_pdb_list.txt from the RCSB db           
 
 download_list_pdb(sys.argv[1],sys.argv[2])
