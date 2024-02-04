@@ -38,3 +38,11 @@ Run the script `plot_script.py`
 $ ./plot_script.py ./PLOT/
 ```
 
+## 3/ Scoring
+
+Run the script `scoring_script.py`
+```markdown
+$ ./scoring_script.py ./SCORING/list_test_pdb.txt ./SCORING/ ./SCORING/2O3Y.txt ./PLOT/ ./score_without_interpolation.txt
+```
+
+
