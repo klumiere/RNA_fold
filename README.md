@@ -7,6 +7,10 @@ This repository contains all the scripts  used to do this project, aimed to calc
 
 ## Install
 
+Clone the project 
+```markdown
+$ git clone https://github.com/klumiere/RNA_fold.git
+```
 
 Go to the folder `RNA_fold` and install the required packages with the correct versions
 ```markdown
@@ -15,10 +19,7 @@ $ cd RNA_fold/
 ```markdown
 $ pip install -r requirements.txt
 ```
-Clone the project 
-```markdown
-$ git clone https://github.com/klumiere/RNA_fold.git
-```
+
 
 Then, run this following command:
 ```markdown
