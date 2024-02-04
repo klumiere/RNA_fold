@@ -58,7 +58,13 @@ $ ./scoring_script.py ./SCORING/list_test_pdb.txt ./SCORING/ ./SCORING/2O3Y.txt 
   
 ## Paths used in command lines
 
-- `./TRAIN/train_pdb_list.txt` : path to the file train_pdb_list.txt which contains the list of PDB file identifiers used for the training set
+- `./TRAIN/train_pdb_list.txt`: path to the file train_pdb_list.txt which contains the list of PDB file identifiers used for the training set
 - `./TRAIN/training_pdb_files/`: path to the directory that will contain all the downloaded PDB files for the training set
 - `./PLOT/`: path to the directoru that will contain all the pair base scores and then the plots
 - `trainset_dist`: name of the output file that will be produced by the function concatene_trainset in the `training_script.py` with all the IAD in one file 
+- `/SCORING/list_test_pdb.txt`: path to the file list_test_pdb.txt which contains a list (with only one pdb id: 2O3Y)
+- `/SCORING/`: path to the directory that will contains the IAD for the PDB 2O3Y and it corresponding score based on the score for each base pairs computed by training_script.py
+- `./SCORING/2O3Y.txt`: path to the file 2O3Y.txt that contains all the IAD according the cirterias
+- `./score_without_interpolation.txt`: path to the file score_without_interpolation.txt that contains the corresponding score to the IAD for this PDB based on the score for each base pairs computed by training_script.py
+
+  
