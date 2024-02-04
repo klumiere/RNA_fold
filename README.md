@@ -26,9 +26,9 @@ $ chmod a+x training_script.py plot_script.py scoring_script.py
 
 ## 1/ Training
 
-Run the script `training_script.py`
+Run the script `training_script.py` 
 ```markdown
-$ ./training_script.py  /home/lumiere/RNA_fold/TRAIN/train_pdb_list.txt /home/lumiere/RNA_fold/TRAIN/training_pdb_files/ /home/lumiere/RNA_fold/PLOT/ trainset_dist
+$ ./training_script.py ./TRAIN/train_pdb_list.txt ./TRAIN/training_pdb_files/ ./PLOT/ trainset_dist
 ```
 
 
