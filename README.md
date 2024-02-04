@@ -42,7 +42,7 @@ Run the script `plot_script.py`
 ```markdown
 $ ./plot_script.py ./PLOT/
 ```
-- This will allow you to build plot from the files which contains a score value in each line to have an idea of the distribution of the score according to the distance between the 2 bases in the. They are in a file nammed plot.txt in the folder `PLOT`.
+- This will allow you to build plot from the files which contains a score value in each line to have an idea of the distribution of the score according to the distance between the 2 bases in the folder`PLOT`. They are in a file nammed plot.txt in the folder `PLOT`.
   
 ## 3/ Scoring
 
