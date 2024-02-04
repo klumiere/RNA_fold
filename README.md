@@ -33,6 +33,7 @@ Run the script `training_script.py`.
 $ ./training_script.py ./TRAIN/train_pdb_list.txt ./TRAIN/training_pdb_files/ ./PLOT/ trainset_dist
 ```
 - This will allow you to download PDB files for the trainset from the [RCSB PDB](https://www.rcsb.org) database from a list containing PDB identifiers.
+- It will extract the required colum to calculate the interatomic distance (IAD), then a score for each pdb file.
 - This will generate 20 files for 20 pairs of bases in which each line corresponds to an interval of interactomic distance in the folder `PLOT`.
 
 ## 2/ Plot
@@ -41,12 +42,16 @@ Run the script `plot_script.py`
 ```markdown
 $ ./plot_script.py ./PLOT/
 ```
-
+- This will allow you to build plot from the files which contains a score value in each line to have an idea of the distribution of the score according to the distance between the 2 bases in the. They are in a file nammed plot.txt in the folder `PLOT`.
+  
 ## 3/ Scoring
 
 Run the script `scoring_script.py`
 ```markdown
 $ ./scoring_script.py ./SCORING/list_test_pdb.txt ./SCORING/ ./SCORING/2O3Y.txt ./PLOT/ ./score_without_interpolation.txt
 ```
+- This script will allow you to calculate the interatomic distance then the score for of each pair of bases  for one new pdb file based on the calulated score obtained in the trainset.
+- It will sum all the score for this pdb file to obtain an estimation of Gibbs free energy.
+  
 
 
